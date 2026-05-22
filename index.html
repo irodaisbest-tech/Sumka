@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAMONA D'ORO | Uzbek Heritage & Italian Elegance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <a href="#" class="logo">Zamona D'oro</a>
+        <div class="nav-links">
+            <a href="#about">Heritage</a>
+            <a href="#collections">Collections</a>
+            <a href="#configurator">Bespoke</a>
+            <a href="#craftsmanship">Craft</a>
+            <a href="#authenticity">Authenticity</a>
+            <a href="#contact">Boutique</a>
+        </div>
+    </nav>
+
+    <!-- 1. HOME PAGE -->
+    <header class="hero" id="home">
+        <!-- High-res, ultra-sharp luxury hero image from Unsplash -->
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1591561954557-26941169b49e?q=80&w=2574&auto=format&fit=crop');"></div>
+        <div class="hero-content reveal active">
+            <span class="hero-subtitle">The Golden Harmony of East and West</span>
+            <h1>Uzbek Soul.<br><span class="text-gold">Italian Elegance.</span></h1>
+            <p class="hero-desc">Experience the world-class fusion of Milan Fashion Week quality and Silk Road heritage. A new era of global luxury.</p>
+            <a href="#collections" class="btn">Discover Collections</a>
+        </div>
+    </header>
+
+    <!-- 2. ABOUT BRAND PAGE -->
+    <section class="section about" id="about">
+        <div class="about-text reveal">
+            <span class="hero-subtitle">Our Story</span>
+            <h2>Zamona <span class="text-gold">D'Oro</span></h2>
+            <p><strong>ZAMONA</strong> embodies the vibrant Eastern spirit, deeply rooted in the rich textile heritage of Uzbekistan. <strong>D'ORO</strong> represents the pinnacle of Italian luxury, where artisanal mastery meets gold-standard perfection.</p>
+            <p>Our mission is to present Uzbekistan to the world through high-end fashion. Every piece is an emotional journey across the ancient Silk Road, combining vibrant Uzbek suzani patterns with minimalist Milanese silhouettes.</p>
+            <a href="#contact" class="btn">Book Private Viewing</a>
+        </div>
+        <div class="about-img-container reveal">
+            <!-- Cinematic Silk Road heritage visual -->
+            <img src="images/media__1779384480007.jpg" alt="Silk Road Heritage" class="about-img">
+        </div>
+    </section>
+
+    <!-- 3. COLLECTIONS PAGE -->
+    <section class="section collections" id="collections">
+        <div class="text-center reveal">
+            <span class="hero-subtitle">Masterpieces</span>
+            <h2>The <span class="text-gold">Collections</span></h2>
+        </div>
+        
+        <div class="collections-grid">
+            <div class="collection-card reveal">
+                <img src="images/media__1779384358509.jpg" alt="Silk Road Classic" class="collection-img">
+                <div class="collection-overlay">
+                    <h3>Silk Road Classic</h3>
+                    <p>Ivory Italian leather met with subtle atlas textiles.</p>
+                </div>
+            </div>
+            <div class="collection-card reveal">
+                <img src="images/media__1779384358497.jpg" alt="Royal Samarkand" class="collection-img">
+                <div class="collection-overlay">
+                    <h3>Royal Samarkand</h3>
+                    <p>Regal blues and mosaic gold accents.</p>
+                </div>
+            </div>
+            <div class="collection-card reveal">
+                <img src="images/media__1779384441605.jpg" alt="Golden Bukhara" class="collection-img">
+                <div class="collection-overlay">
+                    <h3>Golden Bukhara</h3>
+                    <p>Rich burgundy and intricate gold embroidery.</p>
+                </div>
+            </div>
+            <div class="collection-card reveal">
+                <img src="images/media__1779384368343.jpg" alt="Modern Tashkent" class="collection-img">
+                <div class="collection-overlay">
+                    <h3>Modern Tashkent</h3>
+                    <p>Sleek minimalism with hidden heritage details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIAL FEATURE: CONFIGURATOR -->
+    <section class="section configurator" id="configurator">
+        <div class="reveal">
+            <span class="hero-subtitle">Bespoke Experience</span>
+            <h2>Cultural <span class="text-gold">Configurator</span></h2>
+            <p class="text-muted">Mix Italian luxury with Uzbek heritage in real-time.</p>
+        </div>
+
+        <div class="config-container reveal">
+            <div class="config-preview glass-panel">
+                <img id="config-image" src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=2940&auto=format&fit=crop" alt="Configured Bag">
+            </div>
+            
+            <div class="config-options">
+                <h4>Uzbek Elements</h4>
+                <div class="options-grid">
+                    <button class="option-btn active" onclick="updateConfig('atlas')">Atlas Silk</button>
+                    <button class="option-btn" onclick="updateConfig('suzani')">Suzani Embroidery</button>
+                    <button class="option-btn" onclick="updateConfig('bukhara')">Bukhara Gold</button>
+                </div>
+
+                <h4>Italian Elements</h4>
+                <div class="options-grid">
+                    <button class="option-btn active" onclick="updateConfig('matte')">Matte Leather</button>
+                    <button class="option-btn" onclick="updateConfig('glossy')">Glossy Calfskin</button>
+                    <button class="option-btn" onclick="updateConfig('hardware')">Gold Hardware</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CRAFTSMANSHIP PAGE -->
+    <section class="section craftsmanship" id="craftsmanship">
+        <div class="text-center reveal">
+            <span class="hero-subtitle">Artisan Mastery</span>
+            <h2>Every Bag Is <span class="text-gold">Art</span></h2>
+        </div>
+        
+        <div class="craft-grid">
+            <div class="craft-item reveal">
+                <img src="images/craftsmanship.png" alt="Embroidery" class="craft-img">
+                <h3>Hand Embroidery</h3>
+                <p>Generations of Uzbek suzani masters weaving golden threads into history.</p>
+            </div>
+            <div class="craft-item reveal">
+                <img src="images/media__1779384457630.jpg" alt="Leather" class="craft-img">
+                <h3>Premium Leather</h3>
+                <p>The finest Italian hides, selected and treated in Milan's premier tanneries.</p>
+            </div>
+            <div class="craft-item reveal">
+                <img src="images/leather.png" alt="Hardware" class="craft-img">
+                <h3>Gold Hardware</h3>
+                <p>Custom-cast brass and 24k gold details, precision engineered for eternity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TECHNOLOGY & AUTHENTICITY PAGE -->
+    <section class="section authenticity" id="authenticity">
+        <div class="tech-container">
+            <div class="tech-visual reveal glass-panel">
+                <img src="images/media__1779384358480.jpg" alt="Blockchain Tech">
+                <div class="qr-overlay">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M3 3h6v6H3z"/><path d="M15 3h6v6h-6z"/><path d="M3 15h6v6H3z"/><path d="M21 21v-6h-6v6z"/><path d="M9 3v6"/><path d="M15 15v6"/><path d="M21 9h-6"/></svg>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <span class="hero-subtitle">Immutable Heritage</span>
+                <h2>Digital <span class="text-gold">Authenticity</span></h2>
+                <p>Each Zamona D'Oro bag is secured by blockchain verification. A simple scan of the hidden NFC tag or elegant QR certificate reveals the entire journey of your masterpiece.</p>
+                <p>From the artisan in Bukhara to the leather master in Milan, track the provenance and secure your luxury investment forever.</p>
+                <button class="btn">Verify Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CONTACT / EXPERIENCE PAGE -->
+    <section class="section contact" id="contact">
+        <div class="contact-container reveal">
+            <span class="hero-subtitle">Private Consultation</span>
+            <h2>Book Your <span class="text-gold">Experience</span></h2>
+            <p>Our boutiques in Milan, Tashkent, and Dubai offer private viewings. Enter your details to schedule an exclusive consultation.</p>
+            
+            <form class="contact-form glass-panel" style="padding: 40px; margin-top: 40px;">
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Preferred Boutique (Milan / Tashkent / Dubai)">
+                </div>
+                <div class="input-group">
+                    <textarea placeholder="Your Message or Special Requests"></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Request Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">Zamona D'Oro</div>
+        <div>© 2026 Zamona D'Oro. All rights reserved.</div>
+        <div class="social-links">
+            <a href="#" style="color: var(--text-muted); margin-left: 20px; text-decoration: none;">Instagram</a>
+            <a href="#" style="color: var(--text-muted); margin-left: 20px; text-decoration: none;">Vogue</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
